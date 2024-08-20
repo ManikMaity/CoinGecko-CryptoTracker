@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-import { CurrencyContext } from '../../context/CusrrencyContext'
 import { useNavigate } from 'react-router-dom';
+import currencyStore from "../../state/store"
 
 function Navbar() {
 
-  const {setCurrency} = useContext(CurrencyContext);
+  const {setCurrency} = currencyStore()
   let navigator = useNavigate();
 
   return (

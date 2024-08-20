@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
 import { fetchCoinData } from '../../services/fetchCoinData'
 import { useQuery } from 'react-query';
-import { CurrencyContext } from '../../context/CusrrencyContext';
 import { useNavigate } from 'react-router-dom';
+import currencyStore from "../../state/store"
+import { useState } from 'react';
 
 const CoinTable = () => {
-  const {currency} = useContext(CurrencyContext)
 
+  const {currency} = currencyStore()
   const navigator = useNavigate();
 
 
