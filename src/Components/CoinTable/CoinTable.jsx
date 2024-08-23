@@ -65,7 +65,7 @@ const CoinTable = () => {
               <div className='flex gap-4 items-center text-left'>
                 <div className='w-20 h-20  flex items-center'>
 
-                <img src={coin.image} className='w-full' alt="" />
+                <img src={coin.image} className='w-full' loading='lazy'/>
                 </div>
                 <div className=''>
                 <p>{coin.name}</p>
