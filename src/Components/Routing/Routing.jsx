@@ -1,8 +1,10 @@
 import React from 'react'
+import {laxy} from "react";
 import { Route, Routes } from 'react-router-dom'
 import Home from '../../pages/Home'
-import CoinDetailsPage from '../../pages/CoinDetailsPage'
 import Layout from '../../pages/Layout'
+
+const CoinDetailsPage = laxy(() => import('../../pages/CoinDetailsPage'))
 
 function Routing() {
   return (
